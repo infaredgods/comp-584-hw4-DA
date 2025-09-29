@@ -46,6 +46,12 @@
 			    line-height: inherit;
 			}
 
+			@media screen and (max-width: 600px) {
+				.mobile {width: 100% !important;}
+
+				.block{ display: block !important; width: 100% !important}
+			}
+
 			/* Universal styles for links and stuff */
 		
 
@@ -57,7 +63,7 @@
 	<table border="0" role="presentation" cellpadding="0" cellspacing="0" width="100%" style ="margin-left: auto; margin-right: auto;">
 		<tr>
 			<td>
-				<table border="0" role="presentation" cellpadding="0" cellspacing="0" width="600" style="margin-left: auto; margin-right: auto;">
+				<table class = "mobile"border="0" role="presentation" cellpadding="0" cellspacing="0" width="600" style="margin-left: auto; margin-right: auto;">
 
 	  <!-- Logo image -->
 	   <tr>
@@ -109,7 +115,7 @@
 					<tr>
 						<td>
 							<!--left column-->
-							<table align="left" border="0" cellpadding="0" cellspacing="0" class="block" role="presentation" 
+							<table class="block" align="left" border="0" cellpadding="0" cellspacing="0" class="block" role="presentation" 
 							width="33%">
 							<tr>
 								<td style="padding:20px; line-height: 24px;">
@@ -121,7 +127,7 @@
 							</tr>
 						</table>
 							<!--middle column-->
-							<table align="left" border="0" cellpadding="0" cellspacing="0" class="block" role="presentation" 
+							<table class="block"align="left" border="0" cellpadding="0" cellspacing="0" class="block" role="presentation" 
 							width="33%">
 							<tr>
 								<td style="padding:20px; line-height: 24px;">
@@ -133,7 +139,7 @@
 							</tr>
 						</table>
 							<!--right column-->
-							<table align="left" border="0" cellpadding="0" cellspacing="0" class="block" role="presentation" 
+							<table class="block" align="left" border="0" cellpadding="0" cellspacing="0" class="block" role="presentation" 
 							width="33%">
 							<tr>
 								<td style="padding:20px; line-height: 24px;">
