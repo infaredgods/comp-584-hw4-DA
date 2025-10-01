@@ -55,7 +55,13 @@
 			/* Universal styles for links and stuff */
 			a { color: #229efd; font-weight: bold; }
 			a:hover { color:#fd6350; text-decoration: none; }
-			a.button:hover { background-color: #fd6350 !important;}
+			a.button { transition: all 0.2s ease;}
+			a.button:hover { 
+				background-color: #fd6350 !important;
+				box-shadow: 0px 12px 24px rgba(0,0,0,0.2);
+				transform: translateY(-10px);
+			}
+			
 
 			/* Responsive styles */
 	
