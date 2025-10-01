@@ -62,6 +62,15 @@
 				transform: translateY(-10px);
 			}
 			
+			/* CSS Animations */
+			@keyframes fade-in {
+				from { transform: translateY(-200px);}
+				to { transform: translateY(0);}
+			}
+
+			.fade1 { animation: 1s 1 fade-in;}
+			.fade2 { animation: 2s 1 fade-in;}
+			.fade3 { animation: 3s 1 fade-in;}
 
 			/* Responsive styles */
 	
@@ -71,20 +80,20 @@
 	<table border="0" role="presentation" cellpadding="0" cellspacing="0" width="100%" style ="margin-left: auto; margin-right: auto;">
 		<tr>
 			<td>
-				<table class = "mobile"border="0" role="presentation" cellpadding="0" cellspacing="0" width="600" style="margin-left: auto; margin-right: auto;">
+				<table class="mobile" border="0" role="presentation" cellpadding="0" cellspacing="0" width="600" style="margin-left: auto; margin-right: auto;">
 
 	  <!-- Logo image -->
 	   <tr>
 		 	<td>
-				<img alt= "gaming controller" width="100" height="100" style="display: block; margin-left: auto; margin-right: auto;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTHkrOLf-63KAGoKS07XMAjycrRoTU4RTww&s"/>
+				<img class="fade1" alt= "gaming controller" width="100" height="100" style="display: block; margin-left: auto; margin-right: auto;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTHkrOLf-63KAGoKS07XMAjycrRoTU4RTww&s"/>
 				<br>
 			</td>
 	   </tr>	
 	   
 		<!-- Headline -->
 		 <tr>
-		 	<td style="color: white; padding: 15px;"
-				background="https://pixy.org/download/52991/" bccolor="#0000FF" style="background: #0000FF url('https://pixy.org/download/52991/')">
+		 	<td class="fade2" style="color: white; padding: 15px;"
+				background="https://pixy.org/download/52991/" bgcolor="#0000FF" style="background: #0000FF url('https://pixy.org/download/52991/')">
 				<h1 style="text-align: center; font-size: 40px;">Start Gaming Today!</h1>
 
 			</td>
@@ -93,7 +102,7 @@
 		<!-- Hero Image -->
 		 <tr>
 		 	<td>
-				<br><img alt="Headset on top of RGB keyboard" width="600" border="0" style="display: block; max-width: 100%; height:auto; min-width:100px; width: 100%; justify-content: center; align-items: center; flex-direction: column; margin-left: auto; margin-right: auto;" src="https://t3.ftcdn.net/jpg/05/33/85/94/360_F_533859429_nnMYEcCGFQLpWONyVmED8w01rRgRIM6t.jpg"/>
+				<br><img class="fade3" alt="Headset on top of RGB keyboard" width="600" border="0" style="display: block; max-width: 100%; height:auto; min-width:100px; width: 100%; justify-content: center; align-items: center; flex-direction: column; margin-left: auto; margin-right: auto;" src="https://t3.ftcdn.net/jpg/05/33/85/94/360_F_533859429_nnMYEcCGFQLpWONyVmED8w01rRgRIM6t.jpg"/>
 
 			</td>
 	   </tr>	
