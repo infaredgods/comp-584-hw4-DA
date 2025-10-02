@@ -73,6 +73,13 @@
 			.fade3 { animation: 3s 1 fade-in;}
 
 			/* Responsive styles */
+			input { display: none;}
+			label { cursor: pointer;}
+			.slide { display: none;}
+
+			#slide1:checked ~ .slide1,
+			#slide2:checked ~ .slide2,
+			#slide3:checked ~ .slide3 { display: block; }
 	
 		</style>
 	</head>
@@ -136,7 +143,7 @@
 							width="33%">
 							<tr>
 								<td style="padding:20px; line-height: 24px;">
-									<h2 style="font-size: 16px; margin: 0 0 20px 0;">Hollow Knight: Silksong</h2>
+									<h2 style="font-size: 16px; margin: 0 0 20px 0;"><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Hollow Knight: Silksong</a></h2>
 									<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTW_bAypISduMXh-QNecUxYP2svWKs_g-Bu-MQUXTpyYSsmAFYe2sXx5lmcBiW554a8EuYj" alt="Hollow Knight: Silksong poster" width="100%"
 										  style="display:block; margin: 0 auto; max-width: 400px; height: auto;"/>
 									
@@ -148,8 +155,8 @@
 							width="33%">
 							<tr>
 								<td style="padding:20px; line-height: 24px;">
-									<h2 style="font-size: 16px; margin: 0 0 20px 0;">Marvel Rivals</h2>
-									<img src="https://newzoo.com/wp-content/uploads/api/games/artworks/game--marvel-rivals.jpg" alt="Hollow Knight: Silksong poster" width="100%"
+									<h2 style="font-size: 16px; margin: 0 0 20px 0;"><a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/">Marvel Rivals</a></h2>
+									<img src="https://newzoo.com/wp-content/uploads/api/games/artworks/game--marvel-rivals.jpg" alt="Marvel Rivals poster" width="100%"
 										  style="display:block; margin: 0 auto; max-width: 400px; height: auto;"/>
 									
 								</td>
@@ -160,8 +167,8 @@
 							width="33%">
 							<tr>
 								<td style="padding:20px; line-height: 24px;">
-									<h2 style="font-size: 16px; margin: 0 0 20px 0;">Rainbow Six Siege</h2>
-									<img src="https://upload.wikimedia.org/wikipedia/en/4/47/Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg" alt="Hollow Knight: Silksong poster" width="100%"
+									<h2 style="font-size: 16px; margin: 0 0 20px 0;"><a href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege_X/">Rainbow Six Siege</a></h2>
+									<img src="https://upload.wikimedia.org/wikipedia/en/4/47/Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg" alt="Rainbow Six Siege poster" width="100%"
 										  style="display:block; margin: 0 auto; max-width: 400px; height: auto;"/>
 									
 								</td>
@@ -170,6 +177,38 @@
 						</td>
 					</tr>
 
+					<tr>
+						<td align="center" style="padding: 20px;">
+							<input type="radio" name="slides" id="slide1" checked>
+							<input type="radio" name="slides" id="slide2">
+							<input type="radio" name="slides" id="slide3">
+
+							<label for="slide1" style="border: 2px solid black; display: inline-block; margin: 10px; padding: 4px 20px;">Hollow Knight: Silksong</label>
+							<label for="slide2" style="border: 2px solid black; display: inline-block; margin: 10px; padding: 4px 20px;">Marvel Rivals</label>
+							<label for="slide3" style="border: 2px solid black; display: inline-block; margin: 10px; padding: 4px 20px;">Rainbow Six Siege</label>
+
+							<!-- Content for slides-->
+							<div class="slide slide1" style="background-color:#43a7f3; padding: 20px; font-size: 20px; font-family: Times New Roman">
+								<p>Discover a vast, haunted kingdom in Hollow Knight: Silksong! Explore, 
+								fight and survive as you ascend to the peak of a land ruled by silk and song.</p>
+							</div>
+
+							<div class="slide slide2" style="background-color:#43a7f3; padding: 20px; font-size: 20px; font-family: Times New Roman">
+								<p>Marvel Rivals is a Super Hero Team-Based PVP Shooter! Assemble an all-star Marvel squad,
+									devise countless strategies by combining powers to form unique Team-Up skills and fight
+									in destructible, ever-changing battlefields across the continually evolving Marvel universe!</p>
+</p>
+							</div>
+
+							<div class="slide slide3" style="background-color:#43a7f3; padding: 20px; font-size: 20px; font-family: Times New Roman">
+								<p>Rainbow Six Siege X is the reference in tactical team shooters, where elite strategy and execution triumph.
+									 Enjoy free access to Quick Match, Unranked and Dual Front game modes with a selection of operators.</p>
+</p>
+</p>
+							</div>
+
+						</td>
+					</tr>
 				</table>
 				<p style="display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 20px; font-family: Times New Roman;">
 				<br>Don't have a PC to game on? You can use Newegg to buy your components and build a PC yourself. If you don't have the time or
